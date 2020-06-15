@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>ImageMagick</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="" resname="266B7E2FCF414455A7E60C2CCEB8D5F1" translate="no">
+            <source>IM Preferences</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="266B7E2FCF414455A7E60C2CCEB8D5F1">
+        <trans-unit d4:value="1:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.1">
+            <source>IM_Pref_Quality</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.2">
+            <source>IM_Pref_Size</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.3">
+            <source>IM_Pref_Geometry</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.4">
+            <source>IM_Pref_Magick</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.5">
+            <source>IM_Pref_Attribute</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.6">
+            <source>IM_Pref_BackgroundColor</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.7">
+            <source>IM_Pref_BorderColor</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.8">
+            <source>IM_Pref_BoxColor</source>
+        </trans-unit>
+        <trans-unit d4:value="9:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.9">
+            <source>IM_Pref_StrokeColor</source>
+        </trans-unit>
+        <trans-unit d4:value="10:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.10">
+            <source>IM_Pref_FillColor</source>
+        </trans-unit>
+        <trans-unit d4:value="11:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.11">
+            <source>IM_Pref_StrokeWidht</source>
+        </trans-unit>
+    </group>
+    <group resname="themes">
+        <trans-unit id="" resname="04A185C56149421F9A36A225AF8B63F2" translate="no">
+            <source>IM Commands</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="04A185C56149421F9A36A225AF8B63F2">
+        <trans-unit d4:value="1:L" id="04A185C56149421F9A36A225AF8B63F2.1">
+            <source>IM_AddNoise</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="04A185C56149421F9A36A225AF8B63F2.2">
+            <source>IM_Flip</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="04A185C56149421F9A36A225AF8B63F2.3">
+            <source>IM_Flop</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="04A185C56149421F9A36A225AF8B63F2.4">
+            <source>IM_Implode</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="04A185C56149421F9A36A225AF8B63F2.5">
+            <source>IM_Rotate</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="04A185C56149421F9A36A225AF8B63F2.6">
+            <source>IM_Crop</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="04A185C56149421F9A36A225AF8B63F2.7">
+            <source>IM_Blur</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="04A185C56149421F9A36A225AF8B63F2.8">
+            <source>IM_Contrast</source>
+        </trans-unit>
+        <trans-unit d4:value="9:L" id="04A185C56149421F9A36A225AF8B63F2.9">
+            <source>IM_Despeckle</source>
+        </trans-unit>
+        <trans-unit d4:value="10:L" id="04A185C56149421F9A36A225AF8B63F2.10">
+            <source>IM_AdaptiveThreshold</source>
+        </trans-unit>
+        <trans-unit d4:value="11:L" id="04A185C56149421F9A36A225AF8B63F2.11">
+            <source>IM_Unused</source>
+        </trans-unit>
+        <trans-unit d4:value="12:L" id="04A185C56149421F9A36A225AF8B63F2.12">
+            <source>IM_Zoom</source>
+        </trans-unit>
+        <trans-unit d4:value="13:L" id="04A185C56149421F9A36A225AF8B63F2.13">
+            <source>IM_Edge</source>
+        </trans-unit>
+        <trans-unit d4:value="14:L" id="04A185C56149421F9A36A225AF8B63F2.14">
+            <source>IM_Emboss</source>
+        </trans-unit>
+        <trans-unit d4:value="15:L" id="04A185C56149421F9A36A225AF8B63F2.15">
+            <source>IM_Enhance</source>
+        </trans-unit>
+        <trans-unit d4:value="16:L" id="04A185C56149421F9A36A225AF8B63F2.16">
+            <source>IM_Equalize</source>
+        </trans-unit>
+        <trans-unit d4:value="17:L" id="04A185C56149421F9A36A225AF8B63F2.17">
+            <source>IM_Frame</source>
+        </trans-unit>
+        <trans-unit d4:value="18:L" id="04A185C56149421F9A36A225AF8B63F2.18">
+            <source>IM_Gamma</source>
+        </trans-unit>
+        <trans-unit d4:value="19:L" id="04A185C56149421F9A36A225AF8B63F2.19">
+            <source>iM_GaussianBlur</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="04A185C56149421F9A36A225AF8B63F2.20">
+            <source>IM_Level</source>
+        </trans-unit>
+        <trans-unit d4:value="21:L" id="04A185C56149421F9A36A225AF8B63F2.21">
+            <source>IM_Magnify</source>
+        </trans-unit>
+        <trans-unit d4:value="22:L" id="04A185C56149421F9A36A225AF8B63F2.22">
+            <source>IM_Minify</source>
+        </trans-unit>
+        <trans-unit d4:value="23:L" id="04A185C56149421F9A36A225AF8B63F2.23">
+            <source>IM_MedianFilter</source>
+        </trans-unit>
+        <trans-unit d4:value="24:L" id="04A185C56149421F9A36A225AF8B63F2.24">
+            <source>IM_Modulate</source>
+        </trans-unit>
+        <trans-unit d4:value="25:L" id="04A185C56149421F9A36A225AF8B63F2.25">
+            <source>IM_Negate</source>
+        </trans-unit>
+        <trans-unit d4:value="26:L" id="04A185C56149421F9A36A225AF8B63F2.26">
+            <source>IM_Normalize</source>
+        </trans-unit>
+        <trans-unit d4:value="27:L" id="04A185C56149421F9A36A225AF8B63F2.27">
+            <source>IM_OilPaint</source>
+        </trans-unit>
+        <trans-unit d4:value="28:L" id="04A185C56149421F9A36A225AF8B63F2.28">
+            <source>IM_Raise</source>
+        </trans-unit>
+        <trans-unit d4:value="29:L" id="04A185C56149421F9A36A225AF8B63F2.29">
+            <source>IM_ReduceNoise</source>
+        </trans-unit>
+        <trans-unit d4:value="30:L" id="04A185C56149421F9A36A225AF8B63F2.30">
+            <source>IM_Roll</source>
+        </trans-unit>
+        <trans-unit d4:value="31:L" id="04A185C56149421F9A36A225AF8B63F2.31">
+            <source>IM_Sample</source>
+        </trans-unit>
+        <trans-unit d4:value="32:L" id="04A185C56149421F9A36A225AF8B63F2.32">
+            <source>IM_Scale</source>
+        </trans-unit>
+        <trans-unit d4:value="33:L" id="04A185C56149421F9A36A225AF8B63F2.33">
+            <source>IM_Segment</source>
+        </trans-unit>
+        <trans-unit d4:value="34:L" id="04A185C56149421F9A36A225AF8B63F2.34">
+            <source>IM_Shade</source>
+        </trans-unit>
+        <trans-unit d4:value="35:L" id="04A185C56149421F9A36A225AF8B63F2.35">
+            <source>IM_Sharpen</source>
+        </trans-unit>
+        <trans-unit d4:value="36:L" id="04A185C56149421F9A36A225AF8B63F2.36">
+            <source>IM_Shave</source>
+        </trans-unit>
+        <trans-unit d4:value="37:L" id="04A185C56149421F9A36A225AF8B63F2.37">
+            <source>IM_Shear</source>
+        </trans-unit>
+        <trans-unit d4:value="38:L" id="04A185C56149421F9A36A225AF8B63F2.38">
+            <source>IM_Solarize</source>
+        </trans-unit>
+        <trans-unit d4:value="39:L" id="04A185C56149421F9A36A225AF8B63F2.39">
+            <source>IM_Spread</source>
+        </trans-unit>
+        <trans-unit d4:value="40:L" id="04A185C56149421F9A36A225AF8B63F2.40">
+            <source>IM_Swirl</source>
+        </trans-unit>
+        <trans-unit d4:value="41:L" id="04A185C56149421F9A36A225AF8B63F2.41">
+            <source>IM_Threshold</source>
+        </trans-unit>
+        <trans-unit d4:value="42:L" id="04A185C56149421F9A36A225AF8B63F2.42">
+            <source>IM_Trim</source>
+        </trans-unit>
+        <trans-unit d4:value="43:L" id="04A185C56149421F9A36A225AF8B63F2.43">
+            <source>IM_Unsharpmask</source>
+        </trans-unit>
+        <trans-unit d4:value="44:L" id="04A185C56149421F9A36A225AF8B63F2.44">
+            <source>IM_Wave</source>
+        </trans-unit>
+    </group>
+    <group resname="themes">
+        <trans-unit id="" resname="8460009F20694547A1808B875C6A04C1" translate="no">
+            <source>IM Draw</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="8460009F20694547A1808B875C6A04C1">
+        <trans-unit d4:value="1:L" id="8460009F20694547A1808B875C6A04C1.1">
+            <source>IM_Draw_Circle</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="8460009F20694547A1808B875C6A04C1.2">
+            <source>IM_Draw_Rectangle</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="8460009F20694547A1808B875C6A04C1.3">
+            <source>IM_Draw_Arc</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="8460009F20694547A1808B875C6A04C1.4">
+            <source>IM_Draw_Color</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="8460009F20694547A1808B875C6A04C1.5">
+            <source>IM_Draw_Composite</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="8460009F20694547A1808B875C6A04C1.6">
+            <source>IM_Draw_Ellipse</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="8460009F20694547A1808B875C6A04C1.7">
+            <source>IM_Draw_Line</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="8460009F20694547A1808B875C6A04C1.8">
+            <source>IM_Draw_Matte</source>
+        </trans-unit>
+        <trans-unit d4:value="9:L" id="8460009F20694547A1808B875C6A04C1.9">
+            <source>IM_Draw_Point</source>
+        </trans-unit>
+        <trans-unit d4:value="10:L" id="8460009F20694547A1808B875C6A04C1.10">
+            <source>IM_Draw_RoundRectangle</source>
+        </trans-unit>
+    </group>
+    <group resname="themes">
+        <trans-unit id="" resname="18E98839AFA349A4A41F2EB48C0A19FD" translate="no">
+            <source>IM Paint</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="18E98839AFA349A4A41F2EB48C0A19FD">
+        <trans-unit d4:value="0:L" id="18E98839AFA349A4A41F2EB48C0A19FD.1">
+            <source>IM_Paint_Point</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="18E98839AFA349A4A41F2EB48C0A19FD.2">
+            <source>IM_Paint_Replace</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="18E98839AFA349A4A41F2EB48C0A19FD.3">
+            <source>IM_Paint_Floodfill</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="18E98839AFA349A4A41F2EB48C0A19FD.4">
+            <source>IM_Paint_FillToBorder</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="18E98839AFA349A4A41F2EB48C0A19FD.5">
+            <source>IM_Paint_Reset</source>
+        </trans-unit>
+    </group>
+</xliff>
