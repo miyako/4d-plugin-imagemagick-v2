@@ -16,12 +16,6 @@ Updated version of [Tech Note: ImageMagick Plug-in](http://kb.4d.com/assetid=438
 
 * Mac
 
-TODO: OpenEXR, OpenJP2
-
-```
-DELEGATES       = bzlib mpeg fontconfig freetype gslib jng jpeg lzma png ps tiff webp xml zlib
-```
-
 |Format|Description|Mode|
 |:-:|-|-|
 |3FR|Hasselblad CFV/H3D39II|r|
@@ -76,6 +70,7 @@ DELEGATES       = bzlib mpeg fontconfig freetype gslib jng jpeg lzma png ps tiff
 |EPT2|Encapsulated PostScript Level II with TIFF preview|rw|
 |EPT3|Encapsulated PostScript Level III with TIFF preview|rwm|
 |ERF|Epson RAW Format|r|
+|EXR|High Dynamic-range (HDR)|rw|
 |FAX|Group 3 FAX|rwm|
 |FILE|Uniform Resource Locator (file://)|r|
 |FITS|Flexible Image Transport System|rw|
@@ -103,12 +98,18 @@ DELEGATES       = bzlib mpeg fontconfig freetype gslib jng jpeg lzma png ps tiff
 |IIQ|Phase One Raw Image Format|r|
 |INLINE|Base64-encoded inline images|rwm|
 |IPL|IPL Image Sequence|rwm|
+|J2C|JPEG-2000 Code Stream Syntax|rw|
+|J2K|JPEG-2000 Code Stream Syntax|rw|
 |JNG|JPEG Network Graphics|rw|
 |JNX|Garmin tile format|r|
+|JP2|JPEG-2000 File Format Syntax|rw|
+|JPC|JPEG-2000 Code Stream Syntax|rw|
 |JPE|Joint Photographic Experts Group JFIF format|rw|
 |JPEG|Joint Photographic Experts Group JFIF format|rw|
 |JPG|Joint Photographic Experts Group JFIF format|rw|
+|JPM|JPEG-2000 File Format Syntax|rw|
 |JPS|Joint Photographic Experts Group JFIF format|rw|
+|JPT|JPEG-2000 File Format Syntax|rw|
 |K|Raw black samples|rwm|
 |K25|Kodak Digital Camera Raw Image Format|r|
 |KDC|Kodak Digital Camera Raw Image Format|r|
