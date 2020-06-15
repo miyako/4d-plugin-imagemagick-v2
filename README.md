@@ -16,7 +16,7 @@ Updated version of [Tech Note: ImageMagick Plug-in](http://kb.4d.com/assetid=438
 
 * Mac
 
-TODO: OpenEXR, OpenJP2, RSVG
+TODO: OpenEXR, OpenJP2
 
 ```
 DELEGATES       = bzlib mpeg fontconfig freetype gslib jng jpeg lzma png ps tiff webp xml zlib
