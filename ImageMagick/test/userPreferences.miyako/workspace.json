@@ -1,11 +1,14 @@
 ﻿{
 	"editors": [
 		{
+			"type": "explorer"
+		},
+		{
 			"type": "method",
-			"id": 2147483639,
+			"id": 2147483641,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "TEST_convert_from_pdf"
+				"methodName": "TEST"
 			}
 		}
 	]
