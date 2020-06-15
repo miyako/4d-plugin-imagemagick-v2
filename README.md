@@ -1,0 +1,1 @@
+# 4d-plugin-imagemagick-v2
