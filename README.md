@@ -1,5 +1,7 @@
 # 4d-plugin-imagemagick-v2
 
+Updated version of [Tech Note: ImageMagick Plug-in](http://kb.4d.com/assetid=43892) by Thomas Maul.
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
