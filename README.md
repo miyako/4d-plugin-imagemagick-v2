@@ -2,6 +2,8 @@
 
 Updated version of [Tech Note: ImageMagick Plug-in](http://kb.4d.com/assetid=43892) by Thomas Maul.
 
+Conversion to/from PICT or PDF is available, even on 64-bits!
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
