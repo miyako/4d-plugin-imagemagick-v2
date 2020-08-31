@@ -8,14 +8,18 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c9zPqrVw0JWrGGJqA3rowgFA3OA=
+			acXtOCuuoAQGq0fML9SxwLwMkjw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/constants.xlf</key>
 		<data>
-		iaNhiwQlFqdHWS2goDvnCMW4B1Q=
+		UlM83LfP79dKeEBKX+8TBEP2qY0=
+		</data>
+		<key>Resources/manifest.json</key>
+		<data>
+		UxuzDnWPW+VsActxv8B/gS9NtZo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -40,7 +44,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ttRlQw7J7zDrrI64bcRx38R2Nr6aMQfp+lwnHBMni6k=
+			HYXyKsYpi1bKUgDXAUfFVG+iQTw438t5n1M7DLvDnhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -49,14 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rptdvLPervLnFHKjkINSohADkZFaWiP1XZkQXfMb4GA=
+			8NLtGtW2Cy1D1L57WvqC7oG9O0iFhkPZ4WbX3BKSyu8=
+			</data>
+		</dict>
+		<key>Resources/manifest.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k1tDaN+uIB/MMmkone2cibtrztZHlzhDZRNZhiuySYg=
 			</data>
 		</dict>
 		<key>Windows/ImageMagick.4DX</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SvijcU4mL2KvucF2R04jePYrH6rPHH3qukevo51XujY=
+			Ppe+qeat5vZiSLutSdRFMxlNhjileF95gipR0xV63vc=
 			</data>
 		</dict>
 		<key>Windows/gsdll32.dll</key>
@@ -70,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bpNvBj0w6bfk/PLPWRz7ETOunt/TEeK/t1y6hEgFHJA=
+			uBzCu2qprUhgplH2Jzt2kvlDDVfZh0+hpWyMBMIwPh4=
 			</data>
 		</dict>
 		<key>Windows64/gsdll64.dll</key>
@@ -79,15 +90,6 @@
 			<data>
 			No5Wv1iW+Eu2FvgIQRo9Wzn+brm71iyALOAutoG8UbU=
 			</data>
-		</dict>
-		<key>manifest.json</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			wbQYfaqK2wjIOgxoDtg0ALcu7Ls=
-			</data>
-			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>

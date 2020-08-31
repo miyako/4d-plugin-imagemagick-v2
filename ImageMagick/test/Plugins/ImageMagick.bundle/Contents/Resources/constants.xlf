@@ -42,6 +42,9 @@
         <trans-unit d4:value="11:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.11">
             <source>IM_Pref_StrokeWidht</source>
         </trans-unit>
+        <trans-unit d4:value="12:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.12">
+            <source>IM_Pref_Density</source>
+        </trans-unit>
     </group>
     <group resname="themes">
         <trans-unit id="" resname="04A185C56149421F9A36A225AF8B63F2" translate="no">

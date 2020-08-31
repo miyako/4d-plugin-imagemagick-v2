@@ -39,13 +39,16 @@
 			}
 		},
 		"TEST": {
-			"timeStamp": "2020-06-15T15:39:27.859Z"
+			"timeStamp": "2020-06-15T15:39:27.000Z"
 		},
 		"TEST_convert_from_pict": {
 			"timeStamp": "2020-06-15T13:34:45.000Z"
 		},
 		"TEST_convert_from_pdf": {
 			"timeStamp": "2020-06-15T14:32:43.000Z"
+		},
+		"TEST_convert_from_pdf_file": {
+			"timeStamp": "2020-08-31T14:15:01.668Z"
 		},
 		"generate_project": {
 			"timeStamp": "2020-06-15T11:30:56.000Z"

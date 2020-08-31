@@ -115,6 +115,7 @@ int IMImage2::GetProperty(int selector, C_TEXT &stringpara, double &para1, doubl
 		para1 = para2 = para3 = para4 = 0;
 	
 		Magick::Geometry geo;
+        Magick::Point pt;
 		Magick::Color dummyColor; 
 	
 		CUTF8String dummystr;
@@ -125,6 +126,12 @@ int IMImage2::GetProperty(int selector, C_TEXT &stringpara, double &para1, doubl
 			case IM_Pref_Quality: 
 				para1 = (double)_image.quality();
 				break;
+                
+                case IM_Pref_Density:
+                pt = _image.density();
+                para1 = (double)pt.x();
+                para2 = (double)pt.y();
+                break;
 
 			case IM_Pref_size: 
 				para1 = _image.baseColumns();
@@ -197,15 +204,19 @@ int IMImage2::GetProperty(int selector, C_TEXT &stringpara, double &para1, doubl
 
 int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double para2, double para3, double para4)
 {
-	if (!_initialized)
-		return ImageMagickErrorUnitialized;
-
-	if (!_image.isValid())
-		return ImageMagickErrorUnitialized;
-
+    
+    if (!_initialized) {
+        return ImageMagickErrorUnitialized;
+    }
+    
+    if (!_image.isValid()) {
+        return ImageMagickErrorUnitialized;
+    }
+    
 	try {
 		
 		Magick::Geometry geo;
+        Magick::Point pt;
 		CUTF8String dummystr;
 
 		_image.modifyImage();
@@ -215,6 +226,11 @@ int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double
 			case IM_Pref_Quality: 
 				_image.quality((const unsigned int) para1);
 				break;
+                
+            case IM_Pref_Density:
+                pt = Magick::Point(para1, para2);
+                _image.density(pt);
+                break;
 				
 			case IM_Pref_Magick:
 				stringpara.copyUTF8String(&dummystr);

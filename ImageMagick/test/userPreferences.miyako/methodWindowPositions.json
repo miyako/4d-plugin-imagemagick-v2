@@ -168,14 +168,20 @@
 		"height": 611
 	},
 	"Sources/Methods/TEST_convert_from_pdf.4dm": {
-		"left": 520,
-		"top": 306,
+		"left": 332,
+		"top": 213,
 		"width": 1060,
-		"height": 637
+		"height": 611
 	},
 	"Sources/Methods/TEST.4dm": {
 		"left": 671,
-		"top": 540,
+		"top": 566,
+		"width": 1060,
+		"height": 611
+	},
+	"Sources/Methods/TEST_convert_from_pdf_file.4dm": {
+		"left": 181,
+		"top": 140,
 		"width": 1060,
 		"height": 637
 	}
