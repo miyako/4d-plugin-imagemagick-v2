@@ -41,7 +41,7 @@ brew install openexr
 **ARM** version incomplete: `gslib` 
 
 * PDF to PNG (GhostScript) fails
-* PICT to PNG success
+* PICT to PNG success (proprietary converter, not all PICT images are compatible)
 * PNG to PDF success
 
 #### Configuration
