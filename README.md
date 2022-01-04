@@ -39,6 +39,22 @@ copy library to *lib/*
 * `libgs.9.dylib`
 * `libgs.dylib`
 
+**TIFF**: use brew bottle and link manually
+
+copy headers to *include/ghostscript/*
+
+* `tiff.h`
+* `tiffconf.h`
+* `tiffio.h`
+* `tiffio.hxx`
+* `tiffvers.h`
+
+copy library to *lib/*
+
+* `libtiff.5.dylib`
+* `libtiff.a`
+* `libtiff.dylib`
+
 **ImageMagick**: bottle is compiled with [`openmp`](https://mac.r-project.org/openmp/). it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other; compile from source.
 
 * `--without-lqr`
