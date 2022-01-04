@@ -36,8 +36,13 @@ brew install openexr
 ./configure --without-lqr --disable-openmp
 ```
 
-**ARM** version incomplete: `gslib` `libtiff` is disabled
+`libtiff` is disabled
 
+**ARM** version incomplete: `gslib` 
+
+* PDF to PNG (GhostScript) fails
+* PICT to PNG success
+* PNF to PDF success
 
 #### Configuration
 
