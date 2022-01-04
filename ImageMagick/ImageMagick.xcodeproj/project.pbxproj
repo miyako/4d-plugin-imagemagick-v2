@@ -540,7 +540,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.1;
+				MARKETING_VERSION = 2.3.2;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -592,7 +592,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.1;
+				MARKETING_VERSION = 2.3.2;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -642,7 +642,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.1;
+				MARKETING_VERSION = 2.3.2;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";

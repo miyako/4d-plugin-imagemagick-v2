@@ -156,10 +156,10 @@
 		"height": 787
 	},
 	"Sources/Methods/TEST_convert_to_pdf.4dm": {
-		"left": 452,
-		"top": 396,
+		"left": 423,
+		"top": 382,
 		"width": 1060,
-		"height": 611
+		"height": 637
 	},
 	"Sources/Methods/TEST_convert_from_pict.4dm": {
 		"left": 452,
@@ -180,9 +180,9 @@
 		"height": 583
 	},
 	"Sources/Methods/TEST_convert_from_pdf_file.4dm": {
-		"left": 181,
-		"top": 140,
+		"left": 423,
+		"top": 410,
 		"width": 1060,
-		"height": 637
+		"height": 609
 	}
 }
