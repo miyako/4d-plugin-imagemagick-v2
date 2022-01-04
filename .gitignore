@@ -1,2 +1,4 @@
 *.DS_Store
 ImageMagick/build/*
+ImageMagick/test/userPreferences.*
+ImageMagick/test/Data/*
