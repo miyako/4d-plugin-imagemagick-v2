@@ -62,3 +62,7 @@ brew install openexr
 * Apple: 223
 * Intel: 224
 * Windows: 218
+
+* CAL,CALS is `rw` on Intel, `r` on Apple
+* APNG,WEBM,PHM is Apple only
+* TIFF,TIFF64,EPT,EPT2,EPT3,GROUP4,PTIF is Intel only
