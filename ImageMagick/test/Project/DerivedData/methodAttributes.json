@@ -1,74 +1,74 @@
-﻿{
+{
 	"methods": {
 		"generate_file_from_template": {
-			"timeStamp": "2019-07-29T04:26:04.000Z",
+			"timeStamp": "2022-01-04T01:41:10.147Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"TEST_convert_to_pdf": {
-			"timeStamp": "2020-06-15T13:34:46.000Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"generate_project_infoplist": {
-			"timeStamp": "2019-07-02T13:51:21.000Z",
+			"timeStamp": "2022-01-04T01:41:10.147Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"generate_constants_xlf": {
-			"timeStamp": "2019-07-29T04:26:04.000Z",
+			"timeStamp": "2022-01-04T01:41:10.147Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"update_manifest_json": {
-			"timeStamp": "2019-12-13T04:37:40.000Z",
+			"timeStamp": "2022-01-04T01:41:10.148Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"generate_project_xcode": {
-			"timeStamp": "2019-07-02T13:57:13.000Z",
+			"timeStamp": "2022-01-04T01:41:10.148Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"TEST": {
-			"timeStamp": "2020-06-15T15:39:27.000Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"TEST_convert_from_pict": {
-			"timeStamp": "2020-06-15T13:34:45.000Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"TEST_convert_from_pdf": {
-			"timeStamp": "2020-06-15T14:32:43.000Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"TEST_convert_from_pdf_file": {
-			"timeStamp": "2020-08-31T14:15:01.668Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"generate_project": {
-			"timeStamp": "2020-06-15T11:30:56.000Z"
+			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"generate_project_vs": {
-			"timeStamp": "2019-07-24T08:49:03.000Z",
+			"timeStamp": "2022-01-04T01:41:10.148Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"generate_project_plugin_stub": {
-			"timeStamp": "2019-07-23T08:36:58.000Z",
+			"timeStamp": "2022-01-04T01:41:10.147Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
 			}
 		},
 		"generate_project_source": {
-			"timeStamp": "2019-07-02T14:36:13.000Z",
+			"timeStamp": "2022-01-04T01:41:10.148Z",
 			"attributes": {
 				"invisible": true,
 				"preemptive": "capable"
