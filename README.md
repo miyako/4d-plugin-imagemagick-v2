@@ -19,6 +19,8 @@ OpenEXR bottle is dynamic; compile from [source](https://github.com/AcademySoftw
 
 brew bottle ImageMagick is compiled with [`openmp`](https://mac.r-project.org/openmp/).
 
+it also links to `liblqr`
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
