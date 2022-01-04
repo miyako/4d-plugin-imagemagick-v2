@@ -74,7 +74,7 @@ brew install openexr
 
 #### Formats
 
-* ]Apple](formats-apple.md): 223
+* [Apple](formats-apple.md): 223
 * [Intel](formats-intel.md): 224
 * [Windows](formats-windows.md): 218
 
