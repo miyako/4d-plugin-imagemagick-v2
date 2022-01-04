@@ -21,6 +21,11 @@ brew bottle ImageMagick is compiled with [`openmp`](https://mac.r-project.org/op
 
 it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other
 
+let's compile ImageMagick from source
+
+* `--without-lqr`
+* `--disable-openmp`
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
