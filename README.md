@@ -26,6 +26,17 @@ let's compile ImageMagick from source
 * `--without-lqr`
 * `--disable-openmp`
 
+```sh
+brew install libtiff
+brew install freetype
+brew install fontconfig
+brew install openjpeg
+brew install webp 
+brew install ghostscript
+
+./configure --without-lqr --disable-openmp
+```
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
