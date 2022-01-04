@@ -70,15 +70,13 @@ brew install openexr
 ./configure --without-lqr --disable-openmp
 ```
 
-**Note**: `libtiff` is disabled on Apple
-
 **Important**: `gslib` on Apple Silicon only works if plugin is compiled for Development (not Deployment).
 
 #### Formats
 
-* Apple: 223
-* Intel: 224
-* Windows: 218
+* ]Apple](formats-apple.md): 223
+* [Intel](formats-intel.md): 224
+* [Windows](formats-windows.md): 218
 
 * CAL,CALS is `rw` on Intel, `r` on Apple
 * APNG,WEBM,PHM is Apple only
