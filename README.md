@@ -13,6 +13,7 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
 
   * `webp--1.2.1_1.arm64_big_sur` 
   * ~~`imagemagick--7.1.0-17.arm64_big_sur`~~
+  * ~~`openexr--3.1.3.arm64_big_sur`~~
   * `openjpeg--2.4.0.arm64_big_sur`
   * `jpeg--9d.arm64_big_sur`
   * `libpng--1.6.37.arm64_big_sur`
@@ -20,7 +21,7 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
   * `fontconfig--2.13.1.arm64_big_sur`
   * `freetype--2.11.0.arm64_big_sur`
 
-**OpenEXR**: bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
+**OpenEXR**: bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6).
 
 **GhostScript**: compile `9.21` from source. see [gs](https://github.com/miyako/4d-plugin-gs).
 
