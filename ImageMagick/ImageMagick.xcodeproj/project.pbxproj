@@ -57,7 +57,7 @@
 		D13116A91A03ACB700DE1322 /* 4DPluginAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = D13116A81A03ACB700DE1322 /* 4DPluginAPI.c */; settings = {COMPILER_FLAGS = "-Wno-multichar"; }; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
 		D1F9F5EC2783DF5F00A1C2FB /* libgs.9.21.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */; };
-		D1F9F5ED2783DF5F00A1C2FB /* libgs.9.21.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D1F9F5ED2783DF5F00A1C2FB /* libgs.9.21.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -540,7 +540,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.2;
+				MARKETING_VERSION = 2.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -592,7 +592,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.2;
+				MARKETING_VERSION = 2.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -642,7 +642,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.3.2;
+				MARKETING_VERSION = 2.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
