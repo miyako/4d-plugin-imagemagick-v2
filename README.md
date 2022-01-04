@@ -24,6 +24,19 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
 
 **GhostScript**: compile `9.21` from source. see [gs](https://github.com/miyako/4d-plugin-gs).
 
+copy headers to *include/ghostscript/*
+
+* `gdevdsp.h`
+* `gserrors.h`
+* `iapi.h`
+* `ierrors.h`
+
+copy library to *lib/*
+
+* `libgs.9.21.dylib`
+* `libgs.9.dylib`
+* `libgs.dylib`
+
 **ImageMagick**: bottle is compiled with [`openmp`](https://mac.r-project.org/openmp/). it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other; compile from source.
 
 * `--without-lqr`
