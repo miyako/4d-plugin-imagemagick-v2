@@ -4,6 +4,40 @@ Updated version of [Tech Note: ImageMagick Plug-in](http://kb.4d.com/assetid=438
 
 Conversion to/from PICT or PDF is available, even on 64-bits!
 
+* macOS bottle from homebrew
+
+  * `webp--1.2.1_1.arm64_big_sur` 
+  * ~~`imagemagick--7.1.0-17.arm64_big_sur`~~
+  * `openjpeg--2.4.0.arm64_big_sur`
+  * `jpeg--9d.arm64_big_sur`
+  * `libpng--1.6.37.arm64_big_sur`
+  * `libxml2--2.9.12.arm64_big_sur`
+  * `fontconfig--2.13.1.arm64_big_sur`
+  * `freetype--2.11.0.arm64_big_sur`
+
+OpenEXR bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
+
+brew bottle ImageMagick is compiled with [`openmp`](https://mac.r-project.org/openmp/).
+
+it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other
+
+let's compile ImageMagick from source
+
+* `--without-lqr`
+* `--disable-openmp`
+
+```sh
+brew install freetype
+brew install fontconfig
+brew install openjpeg
+brew install webp 
+brew install openexr
+
+./configure --without-lqr --disable-openmp
+```
+
+ARM: `gslib` `libtiff` is disabled
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
