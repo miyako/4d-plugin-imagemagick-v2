@@ -7,7 +7,7 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
 * macOS bottle from homebrew
 
   * `webp--1.2.1_1.arm64_big_sur` 
-  * `imagemagick--7.1.0-17.arm64_big_sur'
+  * `imagemagick--7.1.0-17.arm64_big_sur`
 
 ### Platform
 
