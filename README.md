@@ -15,7 +15,7 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
   * `fontconfig--2.13.1.arm64_big_sur`
   * `freetype--2.11.0.arm64_big_sur`
 
-OpenEXR bottle is dynamic
+OpenEXR bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
 
 ### Platform
 
