@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			acXtOCuuoAQGq0fML9SxwLwMkjw=
+			tzT20wkKhsf2mPD1enfZDuKLm4Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -24,11 +24,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>MacOS/libgs.9.52.dylib</key>
+		<key>Frameworks/libgs.9.21.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			FcKfwjWilF3D+XxGPLi5lgAtZVY=
+			fn9G/8MKPFFS9axvkP6lQwcOdZM=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libgs.9" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libgs.9.21.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			fn9G/8MKPFFS9axvkP6lQwcOdZM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgs.9" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -44,7 +53,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HYXyKsYpi1bKUgDXAUfFVG+iQTw438t5n1M7DLvDnhw=
+			rA/2z3jBHsJRPgT+3bILug52h8401anUJOwKJvUDWqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -63,20 +72,6 @@
 			k1tDaN+uIB/MMmkone2cibtrztZHlzhDZRNZhiuySYg=
 			</data>
 		</dict>
-		<key>Windows/ImageMagick.4DX</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ppe+qeat5vZiSLutSdRFMxlNhjileF95gipR0xV63vc=
-			</data>
-		</dict>
-		<key>Windows/gsdll32.dll</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hFPPeqGZwnKnlJqit2JAXgY/C8pQR88wOPziFzapRMY=
-			</data>
-		</dict>
 		<key>Windows64/ImageMagick.4DX</key>
 		<dict>
 			<key>hash2</key>
@@ -88,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			No5Wv1iW+Eu2FvgIQRo9Wzn+brm71iyALOAutoG8UbU=
+			GwYh0vcJa2TAumdscJO0Ziy/UYuNzhMr3JPj/Aliy74=
 			</data>
 		</dict>
 	</dict>

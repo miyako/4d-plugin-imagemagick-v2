@@ -42,7 +42,6 @@
 		D10239F62497A18900395C47 /* ARRAY_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D10239F42497A18900395C47 /* ARRAY_TEXT.h */; };
 		D10239F92497A25100395C47 /* C_REAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D10239F72497A25100395C47 /* C_REAL.cpp */; };
 		D10239FA2497A25100395C47 /* C_REAL.h in Headers */ = {isa = PBXBuildFile; fileRef = D10239F82497A25100395C47 /* C_REAL.h */; };
-		D10239FC2497B65700395C47 /* libgs.9.52.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D10239FB2497B65700395C47 /* libgs.9.52.dylib */; };
 		D1023A012497BED300395C47 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10239C024979DBB00395C47 /* libjpeg.a */; };
 		D1023A1B2497D30300395C47 /* libopenjp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10239C324979DBB00395C47 /* libopenjp2.a */; };
 		D1023A252497D44F00395C47 /* libIlmImfUtil-2_5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1023A232497D44F00395C47 /* libIlmImfUtil-2_5.a */; };
@@ -57,6 +56,8 @@
 		D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D130064E12F02D9700702C0E /* Cocoa.framework */; };
 		D13116A91A03ACB700DE1322 /* 4DPluginAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = D13116A81A03ACB700DE1322 /* 4DPluginAPI.c */; settings = {COMPILER_FLAGS = "-Wno-multichar"; }; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
+		D1F9F5EC2783DF5F00A1C2FB /* libgs.9.21.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */; };
+		D1F9F5ED2783DF5F00A1C2FB /* libgs.9.21.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,17 @@
 			files = (
 				D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F9F5EE2783DF5F00A1C2FB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1F9F5ED2783DF5F00A1C2FB /* libgs.9.21.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -154,6 +166,8 @@
 		D13116A81A03ACB700DE1322 /* 4DPluginAPI.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = 4DPluginAPI.c; sourceTree = "<group>"; };
 		D134D4A91A030B06008D14EF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
+		D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgs.9.21.dylib; path = test/Plugins/ImageMagick.bundle/Contents/MacOS/libgs.9.21.dylib; sourceTree = "<group>"; };
+		D1F9F5EF2783ECAB00A1C2FB /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = test/Plugins/ImageMagick.bundle/Contents/MacOS/libomp.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +183,8 @@
 				D1023A2B2497D4BE00395C47 /* libIexMath-2_5.a in Frameworks */,
 				D1023A2C2497D4BE00395C47 /* libIlmThread-2_5.a in Frameworks */,
 				D1023A252497D44F00395C47 /* libIlmImfUtil-2_5.a in Frameworks */,
+				D1F9F5EC2783DF5F00A1C2FB /* libgs.9.21.dylib in Frameworks */,
 				D1023A1B2497D30300395C47 /* libopenjp2.a in Frameworks */,
-				D10239FC2497B65700395C47 /* libgs.9.52.dylib in Frameworks */,
 				D1023A012497BED300395C47 /* libjpeg.a in Frameworks */,
 				D10239F22497A08000395C47 /* libfontconfig.a in Frameworks */,
 				D10239EC24979FD400395C47 /* libfreetype.a in Frameworks */,
@@ -280,6 +294,8 @@
 		D16FBB3C22A4C07E008F0416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1F9F5EF2783ECAB00A1C2FB /* libomp.dylib */,
+				D1F9F5EB2783DF5F00A1C2FB /* libgs.9.21.dylib */,
 				D1023A382497D60600395C47 /* libresolv.tbd */,
 				D1023A352497D5CD00395C47 /* libintl.a */,
 				D1023A332497D5AC00395C47 /* libfribidi.a */,
@@ -375,6 +391,7 @@
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
 				8D01CCCF0486CAD60068D4B7 /* Rez */,
 				D1292E7B22C4A91E00CB5A8C /* ShellScript */,
+				D1F9F5EE2783DF5F00A1C2FB /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -523,7 +540,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.3.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -575,7 +592,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.3.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -625,7 +642,7 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.3.0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
