@@ -53,7 +53,7 @@ brew install openexr
 ./configure --without-lqr --disable-openmp
 ```
 
-**Note**: `libtiff` is disabled
+**Note**: `libtiff` is disabled on Apple
 
 **Important**: `gslib` on Apple Silicon only works if plugin is compiled for Development (not Deployment).
 
