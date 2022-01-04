@@ -17,6 +17,8 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
 
 OpenEXR bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
 
+brew bottle ImageMagick is compiled with [`openmp`](https://mac.r-project.org/openmp/).
+
 ### Platform
 
 | carbon | cocoa | win32 | win64 |
