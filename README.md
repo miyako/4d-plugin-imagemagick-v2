@@ -13,6 +13,8 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
 
   * `webp--1.2.1_1.arm64_big_sur` 
   * ~~`imagemagick--7.1.0-17.arm64_big_sur`~~
+  * ~~`openexr--3.1.3.arm64_big_sur`~~
+  * ~~`ghostscript--9.55.0.arm64_big_sur`~~ 
   * `openjpeg--2.4.0.arm64_big_sur`
   * `jpeg--9d.arm64_big_sur`
   * `libpng--1.6.37.arm64_big_sur`
@@ -20,9 +22,22 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
   * `fontconfig--2.13.1.arm64_big_sur`
   * `freetype--2.11.0.arm64_big_sur`
 
-**OpenEXR**: bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
+**OpenEXR**: bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6).
 
 **GhostScript**: compile `9.21` from source. see [gs](https://github.com/miyako/4d-plugin-gs).
+
+copy headers to *include/ghostscript/*
+
+* `gdevdsp.h`
+* `gserrors.h`
+* `iapi.h`
+* `ierrors.h`
+
+copy library to *lib/*
+
+* `libgs.9.21.dylib`
+* `libgs.9.dylib`
+* `libgs.dylib`
 
 **ImageMagick**: bottle is compiled with [`openmp`](https://mac.r-project.org/openmp/). it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other; compile from source.
 
