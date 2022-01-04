@@ -14,6 +14,7 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
   * `webp--1.2.1_1.arm64_big_sur` 
   * ~~`imagemagick--7.1.0-17.arm64_big_sur`~~
   * ~~`openexr--3.1.3.arm64_big_sur`~~
+  * ~~`ghostscript--9.55.0.arm64_big_sur`~~ 
   * `openjpeg--2.4.0.arm64_big_sur`
   * `jpeg--9d.arm64_big_sur`
   * `libpng--1.6.37.arm64_big_sur`
