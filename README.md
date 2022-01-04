@@ -42,7 +42,7 @@ brew install openexr
 
 * PDF to PNG (GhostScript) fails
 * PICT to PNG success
-* PNF to PDF success
+* PNG to PDF success
 
 #### Configuration
 
