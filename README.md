@@ -31,13 +31,12 @@ brew install freetype
 brew install fontconfig
 brew install openjpeg
 brew install webp 
-brew install ghostscript
 brew install openexr
 
 ./configure --without-lqr --disable-openmp
 ```
 
-`libtiff` is disabled
+ARM: `gslib` `libtiff` is disabled
 
 ### Platform
 
