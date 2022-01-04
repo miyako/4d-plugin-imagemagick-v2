@@ -20,13 +20,11 @@ Conversion to/from PICT or PDF is available, even on 64-bits!
   * `fontconfig--2.13.1.arm64_big_sur`
   * `freetype--2.11.0.arm64_big_sur`
 
-OpenEXR bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
+**OpenEXR**: bottle is dynamic; compile from [source](https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.6)
 
-brew bottle ImageMagick is compiled with [`openmp`](https://mac.r-project.org/openmp/).
+**GhostScript**: compile `9.21` from source. see [gs](https://github.com/miyako/4d-plugin-gs).
 
-it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other
-
-let's compile ImageMagick from source
+**ImageMagick**: bottle is compiled with [`openmp`](https://mac.r-project.org/openmp/). it also links to [`liblqr`](https://github.com/carlobaldassi/liblqr) which links to `glib-2.0` which links to many other; compile from source.
 
 * `--without-lqr`
 * `--disable-openmp`
@@ -37,17 +35,10 @@ brew install fontconfig
 brew install openjpeg
 brew install webp 
 brew install openexr
-
 ./configure --without-lqr --disable-openmp
 ```
 
-`libtiff` is disabled
-
-**ARM** version incomplete: `gslib` 
-
-* PDF to PNG (GhostScript) fails
-* PICT to PNG success (proprietary converter, not all PICT images are compatible)
-* PNG to PDF success
+**Note**: `libtiff` is disabled
 
 #### Configuration
 
