@@ -1,7 +1,12 @@
 {
 	"editors": [
 		{
-			"type": "explorer"
+			"type": "method",
+			"id": 2147483640,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TEST_convert_from_pict"
+			}
 		}
 	]
 }

@@ -198,13 +198,13 @@
 		"stamp": "2022-01-04T01:41:10.147Z"
 	},
 	"Sources/Methods/TEST_convert_from_pict.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
+		"startSelection": 36,
+		"endSelection": 7,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-01-04T01:41:10.147Z"
+		"stamp": "2022-04-05T10:41:25.771Z"
 	},
 	"Sources/Methods/TEST_convert_from_pdf.4dm": {
 		"startSelection": 0,
