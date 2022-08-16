@@ -99,6 +99,13 @@ void OnStartup() {
     _wputenv_s(L"MAGICK_GHOSTSCRIPT_PATH", MAGICK_GHOSTSCRIPT_PATH.c_str());
     
 #else
+    NSBundle *thisBundle = [NSBundle bundleWithIdentifier:@"com.4D.ImageMagick"];
+    if(thisBundle){
+        
+        const char *path = [[thisBundle executablePath]UTF8String];
+        Magick::InitializeMagick(path);
+    }
+
 
 #endif
     

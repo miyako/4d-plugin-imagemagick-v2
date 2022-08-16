@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cWYwpnSJTyDfySa5ayTY0xgl36U=
+			jVDb6w+zy7BigPbBfcN1t/uADS8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -24,15 +24,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libgs.9.21.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			fn9G/8MKPFFS9axvkP6lQwcOdZM=
-			</data>
-			<key>requirement</key>
-			<string>identifier "libgs.9" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
 		<key>MacOS/libgs.9.21.dylib</key>
 		<dict>
 			<key>cdhash</key>
@@ -53,7 +44,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X3O/HoxCco79xPn8KOLXUSvGdWQ6LfpkFSm7semuCSo=
+			v9PsIjkzHcCFqywKTVjVoDkMYL3MgzUzrrYKRi+0EUM=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -3,6 +3,8 @@
 #include "4DPluginAPI.h"
 #include "Magick++.h"
 
+#include <MagickWand/MagickWand.h>
+
 #if WIN32
 //#include "magick/magic.h"
 #else

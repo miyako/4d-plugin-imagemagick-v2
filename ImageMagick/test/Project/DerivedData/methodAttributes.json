@@ -1,48 +1,13 @@
 {
 	"methods": {
-		"generate_file_from_template": {
-			"timeStamp": "2022-01-04T01:41:10.147Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
 		"TEST_convert_to_pdf": {
 			"timeStamp": "2022-01-04T01:41:10.147Z"
-		},
-		"generate_project_infoplist": {
-			"timeStamp": "2022-01-04T01:41:10.147Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
-		"generate_constants_xlf": {
-			"timeStamp": "2022-01-04T01:41:10.147Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
-		"update_manifest_json": {
-			"timeStamp": "2022-01-04T01:41:10.148Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
-		"generate_project_xcode": {
-			"timeStamp": "2022-01-04T01:41:10.148Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
 		},
 		"TEST": {
 			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
 		"TEST_convert_from_pict": {
-			"timeStamp": "2022-04-05T10:22:43.588Z"
+			"timeStamp": "2022-04-05T10:41:25.771Z"
 		},
 		"TEST_convert_from_pdf": {
 			"timeStamp": "2022-01-04T01:41:10.147Z"
@@ -50,29 +15,11 @@
 		"TEST_convert_from_pdf_file": {
 			"timeStamp": "2022-01-04T01:41:10.147Z"
 		},
-		"generate_project": {
-			"timeStamp": "2022-01-04T01:41:10.147Z"
+		"TEST_convert_to_pdf2": {
+			"timeStamp": "2022-08-16T06:10:23.370Z"
 		},
-		"generate_project_vs": {
-			"timeStamp": "2022-01-04T01:41:10.148Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
-		"generate_project_plugin_stub": {
-			"timeStamp": "2022-01-04T01:41:10.147Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
-		},
-		"generate_project_source": {
-			"timeStamp": "2022-01-04T01:41:10.148Z",
-			"attributes": {
-				"invisible": true,
-				"preemptive": "capable"
-			}
+		"TEST_convert_to_pdf1": {
+			"timeStamp": "2022-08-16T09:49:48.885Z"
 		}
 	}
 }

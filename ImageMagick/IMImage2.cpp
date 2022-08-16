@@ -16,6 +16,19 @@ int IMImage2::read(C_TEXT &path)
 	try {
 			CUTF8String u;
 			path.copyUTF8String(&u);
+        
+        /*
+         Magick::MagickWand *magick_wand = MagickCore::NewMagickWand();
+         Magick::MagickBooleanType status = MagickReadImage(magick_wand,(const char *)u.c_str());
+         
+         MagickCore::ExceptionType severity;
+         char *description = MagickGetException(magick_wand, &severity);
+         char error_string[256];
+         MagickCore::FormatLocaleString(error_string, 250, "%s %s %lu %s\n", GetMagickModule(), description);
+         description = (char *) MagickCore::MagickRelinquishMemory(description);
+         MagickCore::ClearMagickWand(magick_wand);
+         */
+
 			_image.read((const char *)u.c_str());  
 			_initialized = true;
 			return 0;
