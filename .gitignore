@@ -2,3 +2,4 @@
 ImageMagick/build/*
 ImageMagick/test/userPreferences.*
 ImageMagick/test/Data/*
+ghostscript-9.21/*
