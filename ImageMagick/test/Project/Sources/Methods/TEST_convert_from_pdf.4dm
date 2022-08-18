@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 $im:=IM New Object 
 
 $file:=File:C1566("/RESOURCES/sample.pdf")

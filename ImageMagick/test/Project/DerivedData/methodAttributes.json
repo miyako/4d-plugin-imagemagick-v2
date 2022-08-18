@@ -1,25 +1,46 @@
 {
 	"methods": {
-		"TEST_convert_to_pdf": {
-			"timeStamp": "2022-01-04T01:41:10.147Z"
+		"TEST_load_pdf": {
+			"timeStamp": "2022-08-18T23:26:22.972Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"TEST_convert_png_to_pdf": {
+			"timeStamp": "2022-08-18T23:26:22.973Z",
+			"attributes": {
+				"invisible": true
+			}
 		},
 		"TEST": {
-			"timeStamp": "2022-01-04T01:41:10.147Z"
+			"timeStamp": "2022-08-18T23:26:22.974Z",
+			"attributes": {
+				"invisible": true
+			}
 		},
 		"TEST_convert_from_pict": {
-			"timeStamp": "2022-04-05T10:41:25.771Z"
+			"timeStamp": "2022-08-18T23:26:46.654Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"TEST_convert_jpg_to_pdf": {
+			"timeStamp": "2022-08-18T23:26:22.975Z",
+			"attributes": {
+				"invisible": true
+			}
 		},
 		"TEST_convert_from_pdf": {
-			"timeStamp": "2022-01-04T01:41:10.147Z"
+			"timeStamp": "2022-08-18T23:26:22.975Z",
+			"attributes": {
+				"invisible": true
+			}
 		},
 		"TEST_convert_from_pdf_file": {
-			"timeStamp": "2022-01-04T01:41:10.147Z"
-		},
-		"TEST_convert_to_pdf2": {
-			"timeStamp": "2022-08-16T06:10:23.370Z"
-		},
-		"TEST_convert_to_pdf1": {
-			"timeStamp": "2022-08-16T09:49:48.885Z"
+			"timeStamp": "2022-08-18T23:26:22.975Z",
+			"attributes": {
+				"invisible": true
+			}
 		}
 	}
 }

@@ -1,4 +1,11 @@
 {
-	"export_project": {},
+	"pass": {
+		"methods": [
+			"TEST",
+			"TEST_convert_from_pict",
+			"TEST_convert_jpg_to_pdf",
+			"TEST_convert_png_to_pdf"
+		]
+	},
 	"trash": {}
 }

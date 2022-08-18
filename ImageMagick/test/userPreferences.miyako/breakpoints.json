@@ -1,16 +1,9 @@
 [
 	{
-		"line": 6,
+		"line": 7,
 		"method": {
 			"type": 1,
-			"methodName": "TEST_convert_to_pdf1"
-		}
-	},
-	{
-		"line": 10,
-		"method": {
-			"type": 1,
-			"methodName": "TEST_convert_to_pdf2"
+			"methodName": "TEST_load_pdf"
 		}
 	}
 ]

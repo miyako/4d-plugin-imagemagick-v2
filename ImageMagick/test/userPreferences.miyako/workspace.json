@@ -2,17 +2,14 @@
 	"editors": [
 		{
 			"type": "method",
-			"id": 2147483641,
+			"id": 2147483647,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "TEST_convert_to_pdf1"
+				"methodName": "TEST_load_pdf"
 			}
 		},
 		{
 			"type": "explorer"
-		},
-		{
-			"type": "toolbox"
 		}
 	]
 }

@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 $im:=IM New Object 
 
 $path:=System folder:C487(Desktop:K41:16)+"IPSJ-Z75-3Z-9.pdf[1]"  //open page 2

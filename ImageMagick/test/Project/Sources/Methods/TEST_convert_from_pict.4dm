@@ -1,5 +1,5 @@
-//%attributes = {}
-//  //convert pct to png (OK) this works on 64-bit too!
+//%attributes = {"invisible":true}
+//  //convert pct to png
 
 $im:=IM New Object
 

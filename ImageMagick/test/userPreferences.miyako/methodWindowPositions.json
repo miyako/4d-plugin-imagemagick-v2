@@ -107,12 +107,6 @@
 		"width": 1129,
 		"height": 787
 	},
-	"Sources/Methods/TEST_convert_to_pdf.4dm": {
-		"left": 423,
-		"top": 438,
-		"width": 1060,
-		"height": 581
-	},
 	"Sources/Methods/TEST_convert_from_pict.4dm": {
 		"left": 452,
 		"top": 396,
@@ -132,12 +126,6 @@
 		"height": 637
 	},
 	"Sources/Methods/TEST_convert_from_pdf_file.4dm": {
-		"left": 423,
-		"top": 410,
-		"width": 1060,
-		"height": 609
-	},
-	"Sources/Methods/TEST_convert_to_pdf1.4dm": {
 		"left": 423,
 		"top": 410,
 		"width": 1060,
@@ -191,9 +179,21 @@
 		"width": 1129,
 		"height": 762
 	},
-	"Sources/Methods/TEST_convert_to_pdf2.4dm": {
+	"Sources/Methods/TEST_load_pdf.4dm": {
+		"left": 90,
+		"top": 328,
+		"width": 1060,
+		"height": 581
+	},
+	"Sources/Methods/TEST_convert_png_to_pdf.4dm": {
 		"left": 423,
-		"top": 410,
+		"top": 438,
+		"width": 1060,
+		"height": 581
+	},
+	"Sources/Methods/TEST_convert_jpg_to_pdf.4dm": {
+		"left": 90,
+		"top": 300,
 		"width": 1060,
 		"height": 609
 	}

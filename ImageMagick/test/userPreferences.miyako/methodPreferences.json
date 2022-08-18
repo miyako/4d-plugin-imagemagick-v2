@@ -116,23 +116,14 @@
 		"bookmarks": [],
 		"stamp": "2019-12-13T04:37:40.619Z"
 	},
-	"Sources/Methods/TEST_convert_to_pdf.4dm": {
-		"startSelection": 36,
-		"endSelection": 0,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 3,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2022-01-04T01:41:10.147Z"
-	},
 	"Sources/Methods/TEST_convert_from_pict.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 11,
-		"lastSelectedLine": 11,
+		"startSelection": 24,
+		"endSelection": 24,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-04-05T10:41:25.771Z"
+		"stamp": "2022-08-18T23:26:46.654Z"
 	},
 	"Sources/Methods/TEST_convert_from_pdf.4dm": {
 		"startSelection": 0,
@@ -153,22 +144,13 @@
 		"stamp": "2022-01-04T01:41:10.147Z"
 	},
 	"Sources/Methods/TEST_convert_from_pdf_file.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
+		"startSelection": 57,
+		"endSelection": 57,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-01-04T01:41:10.147Z"
-	},
-	"Sources/Methods/TEST_convert_to_pdf1.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 9,
-		"lastSelectedLine": 9,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2022-08-16T09:49:48.885Z"
+		"stamp": "2022-08-18T23:26:22.975Z"
 	},
 	"Trash/Methods/(generate_project_xcode).4dm": {
 		"startSelection": 0,
@@ -242,13 +224,31 @@
 		"bookmarks": [],
 		"stamp": "2019-07-29T04:26:04.177Z"
 	},
-	"Sources/Methods/TEST_convert_to_pdf2.4dm": {
+	"Sources/Methods/TEST_load_pdf.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 11,
-		"lastSelectedLine": 11,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-08-16T06:10:23.370Z"
+		"stamp": "2022-08-18T23:26:22.972Z"
+	},
+	"Sources/Methods/TEST_convert_png_to_pdf.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-08-18T23:23:48.854Z"
+	},
+	"Sources/Methods/TEST_convert_jpg_to_pdf.4dm": {
+		"startSelection": 58,
+		"endSelection": 58,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-08-18T23:23:28.310Z"
 	}
 }

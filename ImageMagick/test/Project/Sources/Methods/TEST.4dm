@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 $error:=IM Get Format List ($formats)
 
 For ($i;1;Size of array:C274($formats))
