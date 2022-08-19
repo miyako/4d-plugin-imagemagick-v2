@@ -17,7 +17,17 @@ int IMImage2::read(C_TEXT &path)
 			CUTF8String u;
 			path.copyUTF8String(&u);
         
+#if VERSIONMAC
         /*
+         no effect; 'gs' seems to be a constant
+         */
+        
+//    NSBundle *thisBundle = [NSBundle bundleWithIdentifier:@"com.4D.ImageMagick"];
+//    if(thisBundle){
+//        chdir([MAGICK_GHOSTSCRIPT_PATH UTF8String]);
+//    }
+#endif
+        
          Magick::MagickWand *magick_wand = MagickCore::NewMagickWand();
          Magick::MagickBooleanType status = MagickReadImage(magick_wand,(const char *)u.c_str());
          
@@ -27,7 +37,7 @@ int IMImage2::read(C_TEXT &path)
          MagickCore::FormatLocaleString(error_string, 250, "%s %s %lu %s\n", GetMagickModule(), description);
          description = (char *) MagickCore::MagickRelinquishMemory(description);
          MagickCore::ClearMagickWand(magick_wand);
-         */
+         
 
 			_image.read((const char *)u.c_str());  
 			_initialized = true;

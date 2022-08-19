@@ -5,5 +5,12 @@
 			"type": 1,
 			"methodName": "TEST_load_pdf"
 		}
+	},
+	{
+		"line": 11,
+		"method": {
+			"type": 1,
+			"methodName": "TEST_convert_png_to_pdf"
+		}
 	}
 ]

@@ -3,4 +3,5 @@ ImageMagick/build/*
 ImageMagick/test/userPreferences.*
 ImageMagick/test/Data/*
 ghostscript-9.21/*
-a/libfontconfig.a
+a/*
+bin/*

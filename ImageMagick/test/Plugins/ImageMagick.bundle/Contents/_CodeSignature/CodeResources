@@ -24,6 +24,24 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MacOS/gs</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sPW3zyO2cCDaIXJmzfNbJjmntO8=
+			</data>
+			<key>requirement</key>
+			<string>identifier gs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libfreetype.6.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			cs3YdtAG6hqRikWyTsKQcgcLCds=
+			</data>
+			<key>requirement</key>
+			<string>identifier "libfreetype.6" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
 		<key>MacOS/libgs.9.21.dylib</key>
 		<dict>
 			<key>cdhash</key>
@@ -32,6 +50,15 @@
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgs.9" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/libpng16.16.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ObiE1dGPyZ9vrxIqEBZU3mWLoBk=
+			</data>
+			<key>requirement</key>
+			<string>identifier libpng16 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
@@ -75,6 +102,20 @@
 			<key>hash2</key>
 			<data>
 			GwYh0vcJa2TAumdscJO0Ziy/UYuNzhMr3JPj/Aliy74=
+			</data>
+		</dict>
+		<key>Windows64/gswin64.exe</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NSVvOnWCQgSq4QDu/AdcHR3tZq+Z2M87taum4mrgZjE=
+			</data>
+		</dict>
+		<key>Windows64/gswin64c.exe</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XYtfWnnAVR/4hcTIPIr6Qw77RKRdtJ3uPSbN6LV9OYo=
 			</data>
 		</dict>
 	</dict>

@@ -225,22 +225,22 @@
 		"stamp": "2019-07-29T04:26:04.177Z"
 	},
 	"Sources/Methods/TEST_load_pdf.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-08-18T23:26:22.972Z"
+	},
+	"Sources/Methods/TEST_convert_png_to_pdf.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2022-08-18T23:26:22.972Z"
-	},
-	"Sources/Methods/TEST_convert_png_to_pdf.4dm": {
-		"startSelection": 20,
-		"endSelection": 20,
-		"firstSelectedLine": 0,
-		"lastSelectedLine": 0,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2022-08-18T23:23:48.854Z"
+		"stamp": "2022-08-18T23:26:22.973Z"
 	},
 	"Sources/Methods/TEST_convert_jpg_to_pdf.4dm": {
 		"startSelection": 58,
