@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jVDb6w+zy7BigPbBfcN1t/uADS8=
+			3vmYQ7oc2zJvDv1rf+YVnxOwtn4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -46,7 +46,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			fn9G/8MKPFFS9axvkP6lQwcOdZM=
+			vz2/4vVSIRX3rxQoPSCq9M0IN0Y=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libgs.9" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9PsIjkzHcCFqywKTVjVoDkMYL3MgzUzrrYKRi+0EUM=
+			quCQtPmMDrubH9i12RGApMGC3rX2Y66myUQcYEKAY54=
 			</data>
 			<key>optional</key>
 			<true/>
