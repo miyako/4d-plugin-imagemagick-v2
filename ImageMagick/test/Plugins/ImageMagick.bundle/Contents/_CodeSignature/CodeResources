@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3vmYQ7oc2zJvDv1rf+YVnxOwtn4=
+			HWIz7/DPh5zPdZMYojG9PbtE81s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			quCQtPmMDrubH9i12RGApMGC3rX2Y66myUQcYEKAY54=
+			pkWFPfqdclQZW+gGSovxVIpE7VT6RzAV1qLK2wxYby4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -101,7 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GwYh0vcJa2TAumdscJO0Ziy/UYuNzhMr3JPj/Aliy74=
+			ySVN+5W/Spmh+fjZl7JL4mw9bp1I+vZvU3D/yKNZZuM=
+			</data>
+		</dict>
+		<key>Windows64/gsdll64.lib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R3JOZ4FYWz9scqkpneB6N0lkEUE3fLIoEoXVytOelnM=
 			</data>
 		</dict>
 		<key>Windows64/gswin64.exe</key>

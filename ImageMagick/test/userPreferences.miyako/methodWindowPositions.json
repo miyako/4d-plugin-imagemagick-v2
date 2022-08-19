@@ -180,14 +180,14 @@
 		"height": 762
 	},
 	"Sources/Methods/TEST_load_pdf.4dm": {
-		"left": 90,
-		"top": 328,
+		"left": 118,
+		"top": 450,
 		"width": 1060,
 		"height": 581
 	},
 	"Sources/Methods/TEST_convert_png_to_pdf.4dm": {
-		"left": 90,
-		"top": 356,
+		"left": 118,
+		"top": 478,
 		"width": 1060,
 		"height": 553
 	},

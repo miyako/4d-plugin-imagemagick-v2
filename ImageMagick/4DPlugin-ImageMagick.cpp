@@ -98,9 +98,6 @@ void OnStartup() {
     _wputenv_s(L"MAGICK_GHOSTSCRIPT_PATH", MAGICK_GHOSTSCRIPT_PATH.c_str());
     SetEnvironmentVariable(L"MAGICK_GHOSTSCRIPT_PATH", MAGICK_GHOSTSCRIPT_PATH.c_str());
     
-    
-    
-    
     C_TEXT t;
     t.setUTF16String((const PA_Unichar *)thisPath.c_str(), thisPath.length());
     CUTF8String path;
@@ -118,8 +115,6 @@ void OnStartup() {
         
          NSString *MAGICK_GHOSTSCRIPT_PATH = [[thisBundle executablePath]stringByDeletingLastPathComponent];
          setenv("MAGICK_GHOSTSCRIPT_PATH", [MAGICK_GHOSTSCRIPT_PATH UTF8String], 0);
-
-//        chdir([MAGICK_GHOSTSCRIPT_PATH UTF8String]);
         
         const char *path = [[thisBundle executablePath]UTF8String];
         Magick::InitializeMagick(path);
