@@ -98,14 +98,17 @@ void OnStartup() {
     _wputenv_s(L"MAGICK_GHOSTSCRIPT_PATH", MAGICK_GHOSTSCRIPT_PATH.c_str());
     SetEnvironmentVariable(L"MAGICK_GHOSTSCRIPT_PATH", MAGICK_GHOSTSCRIPT_PATH.c_str());
     
+    const char *path = 0;
     C_TEXT t;
     t.setUTF16String((const PA_Unichar *)thisPath.c_str(), thisPath.length());
-    CUTF8String path;
-    t.copyUTF8String(&path);
-    Magick::InitializeMagick(path.c_str());
+    CUTF8String u8;
+    t.copyUTF8String(&u8);
+    path = (const char *)u8.c_str();
+    Magick::InitializeMagick(path);
     
 #else
-
+    
+    const char *path = 0;
     NSBundle *thisBundle = [NSBundle bundleWithIdentifier:@"com.4D.ImageMagick"];
     if(thisBundle){
                 
@@ -116,12 +119,23 @@ void OnStartup() {
          NSString *MAGICK_GHOSTSCRIPT_PATH = [[thisBundle executablePath]stringByDeletingLastPathComponent];
          setenv("MAGICK_GHOSTSCRIPT_PATH", [MAGICK_GHOSTSCRIPT_PATH UTF8String], 0);
         
-        const char *path = [[thisBundle executablePath]UTF8String];
+        /*
+         * no effect;
+
+         NSString *MAGICK_HOME = [[thisBundle executablePath]stringByDeletingLastPathComponent];
+         setenv("MAGICK_HOME", [MAGICK_HOME UTF8String], 0);
+         
+         NSString *MAGICK_CODER_MODULE_PATH = [[thisBundle executablePath]stringByDeletingLastPathComponent];
+         setenv("MAGICK_CODER_MODULE_PATH", [MAGICK_CODER_MODULE_PATH UTF8String], 0);
+         
+         */
+
+        path = [[thisBundle executablePath]UTF8String];
         Magick::InitializeMagick(path);
     }
 #endif
     
-    MagickCore::MagickCoreGenesis(0, MagickCore::MagickFalse);
+    MagickCore::MagickCoreGenesis(path, MagickCore::MagickFalse);
 }
 
 void OnExit() {

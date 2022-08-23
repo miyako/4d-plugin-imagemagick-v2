@@ -24,10 +24,17 @@ int IMImage2::read(C_TEXT &path)
         
 //    NSBundle *thisBundle = [NSBundle bundleWithIdentifier:@"com.4D.ImageMagick"];
 //    if(thisBundle){
-//        chdir([MAGICK_GHOSTSCRIPT_PATH UTF8String]);
+//        NSString *MAGICK_HOME = [[thisBundle executablePath]stringByDeletingLastPathComponent];
+//        setenv("PATH", [MAGICK_HOME UTF8String], 0);
 //    }
-#endif
         
+#endif
+        /*
+         no effect;
+         
+         setenv("MAGICK_SYNCHRONIZE", "true", 0);
+         */
+
          Magick::MagickWand *magick_wand = MagickCore::NewMagickWand();
          Magick::MagickBooleanType status = MagickReadImage(magick_wand,(const char *)u.c_str());
          
