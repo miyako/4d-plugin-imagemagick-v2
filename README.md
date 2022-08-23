@@ -67,7 +67,7 @@ brew install fontconfig
 brew install openjpeg
 brew install webp 
 brew install openexr
-./configure --without-lqr --disable-openmp
+./configure --without-lqr --disable-openmp --with-gslib --without-zstd --without-pango
 ```
 
 ~~gslib on Apple Silicon only works if plugin is compiled for Development (not Deployment)~~
