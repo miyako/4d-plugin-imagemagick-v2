@@ -7,3 +7,6 @@ a/*
 bin/*
 ImageMagick/test/userPreferences.*
 ImageMagick/test/Data/*
+ImageMagick/.vs/*
+ImageMagick/ImageMagick.vcxproj.user
+ImageMagick/Objs/*

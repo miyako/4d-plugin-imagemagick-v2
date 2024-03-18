@@ -100,7 +100,7 @@ void OnStartup() {
     
     const char *path = 0;
     C_TEXT t;
-    t.setUTF16String((const PA_Unichar *)thisPath.c_str(), thisPath.length());
+    t.setUTF16String((const PA_Unichar *)thisPath, wcslen(thisPath));
     CUTF8String u8;
     t.copyUTF8String(&u8);
     path = (const char *)u8.c_str();
