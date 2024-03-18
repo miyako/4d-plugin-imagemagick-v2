@@ -74,7 +74,7 @@ brew install openexr
 
 #### Number of Formats
 
-* [Apple](formats-apple.md): 223
+* [Apple](formats-apple.md): 235
 * [Intel](formats-intel.md): 224
 * [Windows](formats-windows.md): 218
 
@@ -82,4 +82,3 @@ brew install openexr
 
 * CAL,CALS is `rw` on Intel, `r` on Apple
 * APNG,WEBM,PHM is Apple only
-* TIFF,TIFF64,EPT,EPT2,EPT3,GROUP4,PTIF is Intel only
