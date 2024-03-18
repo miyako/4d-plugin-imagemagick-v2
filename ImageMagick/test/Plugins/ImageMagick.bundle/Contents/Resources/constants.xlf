@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
     <header>
         <note>ImageMagick</note>
@@ -44,6 +44,9 @@
         </trans-unit>
         <trans-unit d4:value="12:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.12">
             <source>IM_Pref_Density</source>
+        </trans-unit>
+        <trans-unit d4:value="13:L" id="266B7E2FCF414455A7E60C2CCEB8D5F1.13">
+            <source>IM_Pref_Compression</source>
         </trans-unit>
     </group>
     <group resname="themes">
@@ -242,6 +245,99 @@
         </trans-unit>
         <trans-unit d4:value="4:L" id="18E98839AFA349A4A41F2EB48C0A19FD.5">
             <source>IM_Paint_Reset</source>
+        </trans-unit>
+    </group>
+
+    
+    
+    
+    
+    <group resname="themes">
+        <trans-unit id="" resname="650B5EE510F64BB9BA9EAE62DA2E91DA" translate="no">
+            <source>IM Compression Type</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="650B5EE510F64BB9BA9EAE62DA2E91DA">
+        <trans-unit d4:value="0:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.1">
+            <source>IM_Compression_B44A</source>
+        </trans-unit>
+        <trans-unit d4:value="1:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.2">
+            <source>IM_Compression_B44</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.3">
+            <source>IM_Compression_BZip</source>
+        </trans-unit>
+        <trans-unit d4:value="3:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.4">
+            <source>IM_Compression_DXT1</source>
+        </trans-unit>
+        <trans-unit d4:value="4:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.5">
+            <source>IM_Compression_DXT3</source>
+        </trans-unit>
+        <trans-unit d4:value="5:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.6">
+            <source>IM_Compression_DXT3</source>
+        </trans-unit>
+        <trans-unit d4:value="6:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.7">
+            <source>IM_Compression_DXT5</source>
+        </trans-unit>
+        <trans-unit d4:value="7:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.8">
+            <source>IM_Compression_Fax</source>
+        </trans-unit>
+        <trans-unit d4:value="8:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.9">
+            <source>IM_Compression_Group4</source>
+        </trans-unit>
+        <trans-unit d4:value="9:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.10">
+            <source>IM_Compression_JBIG1</source>
+        </trans-unit>
+        <trans-unit d4:value="10:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.11">
+            <source>IM_Compression_JBIG1</source>
+        </trans-unit>
+        <trans-unit d4:value="11:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.12">
+            <source>IM_Compression_JBIG2</source>
+        </trans-unit>
+        <trans-unit d4:value="12:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.13">
+            <source>IM_Compression_JPEG2000</source>
+        </trans-unit>
+        <trans-unit d4:value="13:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.14">
+            <source>IM_Compression_JPEG</source>
+        </trans-unit>
+        <trans-unit d4:value="14:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.15">
+            <source>IM_Compression_LosslessJPEG</source>
+        </trans-unit>
+        <trans-unit d4:value="15:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.16">
+            <source>IM_Compression_LZMA</source>
+        </trans-unit>
+        <trans-unit d4:value="16:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.17">
+            <source>IM_Compression_LZWC</source>
+        </trans-unit>
+        <trans-unit d4:value="17:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.18">
+            <source>IM_Compression_No</source>
+        </trans-unit>
+        <trans-unit d4:value="18:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.19">
+            <source>IM_Compression_Piz</source>
+        </trans-unit>
+        <trans-unit d4:value="19:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.20">
+            <source>IM_Compression_Pxr24</source>
+        </trans-unit>
+        <trans-unit d4:value="20:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.21">
+            <source>IM_Compression_RLE</source>
+        </trans-unit>
+        <trans-unit d4:value="21:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.22">
+            <source>IM_Compression_Zip</source>
+        </trans-unit>
+        <trans-unit d4:value="22:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.23">
+            <source>IM_Compression_ZipS</source>
+        </trans-unit>
+        <trans-unit d4:value="23:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.24">
+            <source>IM_Compression_Zstd</source>
+        </trans-unit>
+        <trans-unit d4:value="24:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.25">
+            <source>IM_Compression_WebP</source>
+        </trans-unit>
+        <trans-unit d4:value="25:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.26">
+            <source>IM_Compression_DWAA</source>
+        </trans-unit>
+        <trans-unit d4:value="26:L" id="650B5EE510F64BB9BA9EAE62DA2E91DA.27">
+            <source>IM_Compression_DWAB</source>
         </trans-unit>
     </group>
 </xliff>

@@ -74,7 +74,8 @@ enum {
 	IM_Pref_StrokeColor = 9,
 	IM_Pref_FillColor = 10,
 	IM_Pref_StrokeWidth = 11,
-    IM_Pref_Density = 12
+    IM_Pref_Density = 12,
+    IM_Pref_Compression = 13
 } ;
 
 enum {

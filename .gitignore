@@ -6,3 +6,4 @@ ghostscript-9.21/*
 a/*
 bin/*
 ImageMagick/test/userPreferences.*
+ImageMagick/test/Data/*

@@ -12,6 +12,8 @@
 |AVI|Microsoft Audio/Visual Interleaved|r|
 |AVS|AVS X image|rwm|
 |B|Raw blue samples|rwm|
+|BAYER|Raw mosaiced samples|rwm|
+|BAYERA|Raw mosaiced and alpha samples|rwm|
 |BGR|Raw blue, green, and red samples|rwm|
 |BGRA|Raw blue, green, red, and alpha samples|rwm|
 |BGRO|Raw blue, green, red, and opacity samples|rwm|
@@ -19,8 +21,8 @@
 |BMP2|Microsoft Windows bitmap image (V2)|rw|
 |BMP3|Microsoft Windows bitmap image (V3)|rw|
 |C|Raw cyan samples|rwm|
-|CAL|Continuous Acquisition and Life-cycle Support Type 1|r|
-|CALS|Continuous Acquisition and Life-cycle Support Type 1|r|
+|CAL|Continuous Acquisition and Life-cycle Support Type 1|rw|
+|CALS|Continuous Acquisition and Life-cycle Support Type 1|rw|
 |CANVAS|Constant image uniform color|r|
 |CAPTION|Caption|r|
 |CIN|Cineon Image File|rw|
@@ -49,6 +51,9 @@
 |EPS|Encapsulated PostScript|rw|
 |EPSF|Encapsulated PostScript|rw|
 |EPSI|Encapsulated PostScript Interchange format|rw|
+|EPT|Encapsulated PostScript with TIFF preview|rw|
+|EPT2|Encapsulated PostScript Level II with TIFF preview|rw|
+|EPT3|Encapsulated PostScript Level III with TIFF preview|rwm|
 |ERF|Epson RAW Format|r|
 |EXR|High Dynamic-range (HDR)|rw|
 |FARBFELD|Farbfeld|rw|
@@ -61,6 +66,7 @@
 |FRACTAL|Plasma fractal image|r|
 |FTP|Uniform Resource Locator (ftp://)|r|
 |FTS|Flexible Image Transport System|rw|
+|FTXT|Formatted text image|rw|
 |G|Raw green samples|rwm|
 |G3|Group 3 FAX|rw|
 |G4|Group 4 FAX|rw|
@@ -69,6 +75,7 @@
 |GRADIENT|Gradual linear passing from one shade to another|r|
 |GRAY|Raw gray samples|rwm|
 |GRAYA|Raw gray and alpha samples|rwm|
+|GROUP4|Raw CCITT Group4|rw|
 |HALD|Identity Hald color lookup table image|r|
 |HDR|Radiance RGBE image format|rwm|
 |HRZ|Slow Scan TeleVision|rw|
@@ -164,7 +171,9 @@
 |PS|PostScript|rwm|
 |PSB|Adobe Large Document Format|rwm|
 |PSD|Adobe Photoshop bitmap|rwm|
+|PTIF|Pyramid encoded TIFF|rwm|
 |PWP|Seattle Film Works|r|
+|QOI|Quite OK image format|rw|
 |R|Raw red samples|rwm|
 |RADIAL-GRADIENT|Gradual radial passing from one shade to another|r|
 |RAF|Fuji CCD-RAW Graphic File|r|
@@ -189,11 +198,14 @@
 |SR2|Sony Raw Format 2|r|
 |SRF|Sony Raw Format|r|
 |STEGANO|Steganographic image|r|
+|STRIMG|String to image and back|rw|
 |SUN|SUN Rasterfile|rwm|
 |SVG|Scalable Vector Graphics|rwm|
 |SVGZ|Compressed Scalable Vector Graphics|rwm|
 |TEXT|Text|r|
 |TGA|Truevision Targa image|rw|
+|TIFF|Tagged Image File Format|rwm|
+|TIFF64|Tagged Image File Format (64-bit)|rwm|
 |TILE|Tile image with a texture|r|
 |TIM|PSX TIM|r|
 |TM2|PS2 TIM2|r|
@@ -202,7 +214,7 @@
 |TXT|Text|rwm|
 |UYVY|16bit/pixel interleaved YUV|rw|
 |VDA|Truevision Targa image|rw|
-|VICAR|VICAR rasterfile format|rw|
+|VICAR|Video Image Communication And Retrieval|rw|
 |VID|Visual Image Directory|rwm|
 |VIFF|Khoros Visualization image|rwm|
 |VIPS|VIPS image|rwm|

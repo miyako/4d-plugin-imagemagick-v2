@@ -432,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
@@ -464,7 +465,8 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.6.0;
+				MARKETING_VERSION = 2.7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -487,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
@@ -516,7 +519,8 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.6.0;
+				MARKETING_VERSION = 2.7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -539,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
@@ -566,7 +571,8 @@
 					"$(PROJECT_DIR)/test/Plugins/ImageMagick.bundle/Contents/MacOS/",
 				);
 				LIBRARY_STYLE = Bundle;
-				MARKETING_VERSION = 2.6.0;
+				MARKETING_VERSION = 2.7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";

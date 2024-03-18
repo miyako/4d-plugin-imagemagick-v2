@@ -219,6 +219,10 @@ int IMImage2::GetProperty(int selector, C_TEXT &stringpara, double &para1, doubl
 			case IM_Pref_StrokeWidth:
 				para1 = _image.strokeWidth();
 				break;
+            
+            case IM_Pref_Compression:
+                para1 = _image.compressType();
+                break;
 
 			default: 
 				return ImageMagickErrorUnknownCommand;
@@ -319,8 +323,10 @@ int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double
 			case IM_Pref_StrokeWidth:
 				_image.strokeWidth(para1);
 				break;
-
-			default: 
+            case IM_Pref_Compression:
+                _image.compressType((Magick::CompressionType)para1);
+                break;
+			default:
 				return ImageMagickErrorUnknownCommand;
 				break;
 		}
