@@ -1,6 +1,29 @@
 #include "IMImage2.h"
 #include "4DPlugin-ImageMagick.h"
 
+// Values from 4D are doubles. Converting a negative, NaN or out-of-range double
+// to an unsigned (or too narrow) integer type is undefined behaviour, and
+// arm64 and x86_64 then give different results (0 vs a huge wrapped value).
+static size_t im_size(double v)
+{
+	if(!(v > 0)) return 0; // also NaN
+	if(v >= 4294967295.0) return 4294967295UL;
+	return (size_t)v;
+}
+
+static ::ssize_t im_ssize(double v)
+{
+	if(!(v == v)) return 0; // NaN
+	if(v <= -2147483648.0) return -2147483647L - 1;
+	if(v >= 2147483647.0) return 2147483647L;
+	return (::ssize_t)v;
+}
+
+static int im_int(double v)
+{
+	return (int)im_ssize(v);
+}
+
 IMImage2::IMImage2() : _initialized(false)
 {
 	_image = 0;
@@ -63,6 +86,13 @@ int IMImage2::read(C_TEXT &path)
 		_initialized = _image.isValid();//error could just be a warning about config.xml
 		return _initialized ? 0 : ImageMagickErrorFramework;
 	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
 }
 
 int IMImage2::read(const void *data,const size_t length)
@@ -79,6 +109,13 @@ int IMImage2::read(const void *data,const size_t length)
 		_initialized = _image.isValid();//error could just be a warning about config.xml
 		return _initialized ? 0 : ImageMagickErrorFramework;
 	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
 }
 
 int IMImage2::create(int x, int y, C_TEXT &color)
@@ -86,13 +123,20 @@ int IMImage2::create(int x, int y, C_TEXT &color)
 	try { 
 			CUTF8String u;
 			color.copyUTF8String(&u);
-			Magick::Image newimage(Magick::Geometry(x, y), Magick::Color((const char *)u.c_str()));
+			Magick::Image newimage(Magick::Geometry(x > 0 ? (size_t)x : 0, y > 0 ? (size_t)y : 0), Magick::Color((const char *)u.c_str()));
 			_image = newimage;
 			_initialized = true;
 			return 0;
 		}
 	catch(Magick::Exception &error_) 
 	{
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
@@ -117,6 +161,13 @@ int IMImage2::write(C_TEXT &path)
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
 }
 
 int IMImage2::write(PA_PluginParameters params, short index)
@@ -135,6 +186,13 @@ int IMImage2::write(PA_PluginParameters params, short index)
 		}
 	catch(Magick::Exception &error_) 
 	{
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
@@ -241,6 +299,13 @@ int IMImage2::GetProperty(int selector, C_TEXT &stringpara, double &para1, doubl
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
 }
 
 int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double para2, double para3, double para4)
@@ -265,7 +330,7 @@ int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double
 		switch (selector)
 		{
 			case IM_Pref_Quality: 
-				_image.quality((const unsigned int) para1);
+				_image.quality(im_size(para1));
 				break;
                 
             case IM_Pref_Density:
@@ -330,7 +395,7 @@ int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double
 				_image.strokeWidth(para1);
 				break;
             case IM_Pref_Compression:
-                _image.compressType((Magick::CompressionType)para1);
+                _image.compressType((Magick::CompressionType)im_int(para1));
                 break;
 			default:
 				return ImageMagickErrorUnknownCommand;
@@ -340,6 +405,13 @@ int IMImage2::SetProperty(int selector, C_TEXT &stringpara, double para1, double
 		}
 	catch(Magick::Exception &error_) 
 	{
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
@@ -374,7 +446,7 @@ int IMImage2::Draw(int selector, C_TEXT &stringpara, double para1, double para2,
 
 			case IM_Draw_Color: 
 				{
-					int pm = (int) para3;
+					int pm = im_int(para3);
 					_image.draw(Magick::DrawableColor(para1, para2, (Magick::PaintMethod) pm));
 				}
 				break;			
@@ -384,11 +456,11 @@ int IMImage2::Draw(int selector, C_TEXT &stringpara, double para1, double para2,
 				// or
 				// Path, 0, x, y, width, height, composition
 				{
-					int Composition = (int) para6;
+					int Composition = im_int(para6);
 					
 					if (para1)
 					{						
-						IMImage2 *newImage = _objectGet(para1);
+						IMImage2 *newImage = _objectGet((uint32_t)im_size(para1));
 												
 						if (newImage)
 							_image.draw(Magick::DrawableCompositeImage(para2, para3, para4, para5, newImage->_image, (Magick::CompositeOperator) Composition));
@@ -412,7 +484,7 @@ int IMImage2::Draw(int selector, C_TEXT &stringpara, double para1, double para2,
 
 			case IM_Draw_Matte: 
 				{
-					int paint = (int) para3;
+					int paint = im_int(para3);
 //					_image.draw(Magick::DrawableMatte(para1, para2, (Magick::PaintMethod) paint));
 					_image.draw(Magick::DrawableAlpha(para1, para2, (Magick::PaintMethod) paint));
 				}
@@ -451,6 +523,13 @@ int IMImage2::Draw(int selector, C_TEXT &stringpara, double para1, double para2,
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
 }
 
 int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double para2, double para3, double para4, double para5, double para6)
@@ -469,7 +548,7 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 		switch (selector)
 		{
 			case IM_Mod_addNoise: 
-				_image.addNoise((const MagickCore::NoiseType)(int)para1);
+				_image.addNoise((const MagickCore::NoiseType)im_int(para1));
 				break;
 
 			case IM_Mod_flip: 
@@ -489,7 +568,7 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 
 			case IM_Mod_crop:  //  x1, y1, x2, y2
-				geo = Magick::Geometry((para3-para1), (para4-para2), para1, para2);
+				geo = Magick::Geometry(im_size(para3-para1), im_size(para4-para2), im_ssize(para1), im_ssize(para2));
 //				geo.xOff(para1);
 //				geo.yOff(para2);
 //				geo.width((para3-para1));
@@ -513,12 +592,12 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 
 			case IM_Mod_adaptiveThreshold:  //  unsigned int width, unsigned int height, unsigned offset = 0
-				_image.adaptiveThreshold((size_t)para1, (size_t)para2, (double)para3);
+				_image.adaptiveThreshold(im_size(para1), im_size(para2), (double)para3);
 				break;
 
 			case IM_Mod_Zoom:
-				geo.width((size_t)para1);
-				geo.height((size_t)para2);
+				geo.width(im_size(para1));
+				geo.height(im_size(para2));
 				_image.zoom(geo);
 				break;
 				
@@ -539,7 +618,7 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 				
 			case IM_Mod_Frame:
-				_image.frame((size_t)para1, (size_t)para2, (::ssize_t)para3, (::ssize_t)para4);
+				_image.frame(im_size(para1), im_size(para2), im_ssize(para3), im_ssize(para4));
 				break;	
 				
 			case IM_Mod_Gamma:
@@ -586,7 +665,7 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 				
 			case IM_Mod_Raise:
-				geo = Magick::Geometry(para1, para2, para3, para4);
+				geo = Magick::Geometry(im_size(para1), im_size(para2), im_ssize(para3), im_ssize(para4));
 //				geo.width((para1));
 //				geo.height((para2));
 //				geo.xOff(para3);
@@ -602,18 +681,18 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 				
 			case IM_Mod_Roll:
-				_image.roll((size_t)para1, (size_t)para2);
+				_image.roll((size_t)im_ssize(para1), (size_t)im_ssize(para2)); // negative offsets keep their two's-complement meaning
 				break;
 				
 			case IM_Mod_Sample:
-				geo.width((size_t)para1);
-				geo.height((size_t)para2);
+				geo.width(im_size(para1));
+				geo.height(im_size(para2));
 				_image.sample(geo);
 				break;
 				
 			case IM_Mod_Scale:
-				geo.width((size_t)para1);
-				geo.height((size_t)para2);
+				geo.width(im_size(para1));
+				geo.height(im_size(para2));
 				_image.scale(geo);
 				break;
 				
@@ -630,8 +709,8 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 				
 			case IM_Mod_Shave:
-				geo.width((size_t)para1);
-				geo.height((size_t)para2);				
+				geo.width(im_size(para1));
+				geo.height(im_size(para2));				
 				_image.shave(geo);
 				break;
 				
@@ -644,7 +723,7 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 				break;
 				
 			case IM_Mod_Spread:
-				_image.spread((int)para1);
+				_image.spread(im_int(para1));
 				break;
 				
 			case IM_Mod_Swirl:
@@ -675,6 +754,13 @@ int IMImage2::ModifyImage(int selector, C_TEXT &stringpara, double para1, double
 		}
 	catch(Magick::Exception &error_) 
 	{
+		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
+		return ImageMagickErrorFramework;
+	}
+	catch(std::exception &error_)
+	{
+		// e.g. std::bad_alloc: without this it escapes to PluginMain's catch(...),
+		// and the command returns 0 (success) without doing anything
 		_lastError.setUTF8String((const uint8_t *)error_.what(), strlen(error_.what()));
 		return ImageMagickErrorFramework;
 	}

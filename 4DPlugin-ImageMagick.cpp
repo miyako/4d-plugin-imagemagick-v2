@@ -623,10 +623,15 @@ void IM_Get_Format_List(PA_PluginParameters params) {
     
     std::list<Magick::CoderInfo> coderList;
     
-    Magick::coderInfoList( &coderList,                // Reference to output list
-                          Magick::CoderInfo::TrueMatch,        // Match readable formats
-                          Magick::CoderInfo::AnyMatch,        // Don't care about writable formats
-                          Magick::CoderInfo::AnyMatch);        // Don't care about multi-frame support
+    try {
+        Magick::coderInfoList( &coderList,                // Reference to output list
+                              Magick::CoderInfo::TrueMatch,        // Match readable formats
+                              Magick::CoderInfo::AnyMatch,        // Don't care about writable formats
+                              Magick::CoderInfo::AnyMatch);        // Don't care about multi-frame support
+    } catch(std::exception &) {
+        // an exception escaping to PluginMain would skip writing the array back
+        coderList.clear();
+    }
     
     std::list<Magick::CoderInfo>::iterator entry = coderList.begin();
     
